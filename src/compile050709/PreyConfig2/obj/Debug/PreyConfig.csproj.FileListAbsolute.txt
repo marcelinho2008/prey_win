@@ -1,0 +1,13 @@
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\PreyConfig.exe
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\PreyConfig.pdb
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\Prey.dll
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\ManagedWifi.dll
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\Prey.pdb
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\ManagedWifi.xml
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\obj\Debug\ResolveAssemblyReference.cache
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\obj\Debug\Prey.Form1.resources
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\obj\Debug\Prey.Properties.Resources.resources
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\obj\Debug\PreyConfig.csproj.GenerateResource.Cache
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\obj\Debug\PreyConfig.exe
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\obj\Debug\PreyConfig.pdb
+D:\tomas-prey_win\tomas-prey_win\src\PreyConfig\bin\Debug\Prey.xml

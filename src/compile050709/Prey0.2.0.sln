@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreyPW", "Prey0.2.0\PreyPW.csproj", "{2773B71A-3316-46C2-AFBE-C893644EBD2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{12765FA6-EEDC-4CB1-A9E2-D3278072DBE5} = {12765FA6-EEDC-4CB1-A9E2-D3278072DBE5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prey", "Prey\Prey.csproj", "{B4BB5FC8-D0C4-4362-A715-23CE5C552523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreyAgent", "PreyAgent\PreyAgent.csproj", "{1B57F7A8-F8DF-40BD-8659-B575768AB1FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreyDump", "PreyDump\PreyDump.csproj", "{D668AC37-6EEA-4E41-9402-5359C14E76F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreyConfig", "PreyConfig\PreyConfig.csproj", "{12765FA6-EEDC-4CB1-A9E2-D3278072DBE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2773B71A-3316-46C2-AFBE-C893644EBD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2773B71A-3316-46C2-AFBE-C893644EBD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2773B71A-3316-46C2-AFBE-C893644EBD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2773B71A-3316-46C2-AFBE-C893644EBD2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BB5FC8-D0C4-4362-A715-23CE5C552523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BB5FC8-D0C4-4362-A715-23CE5C552523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BB5FC8-D0C4-4362-A715-23CE5C552523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BB5FC8-D0C4-4362-A715-23CE5C552523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B57F7A8-F8DF-40BD-8659-B575768AB1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B57F7A8-F8DF-40BD-8659-B575768AB1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B57F7A8-F8DF-40BD-8659-B575768AB1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B57F7A8-F8DF-40BD-8659-B575768AB1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D668AC37-6EEA-4E41-9402-5359C14E76F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D668AC37-6EEA-4E41-9402-5359C14E76F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D668AC37-6EEA-4E41-9402-5359C14E76F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D668AC37-6EEA-4E41-9402-5359C14E76F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12765FA6-EEDC-4CB1-A9E2-D3278072DBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12765FA6-EEDC-4CB1-A9E2-D3278072DBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12765FA6-EEDC-4CB1-A9E2-D3278072DBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12765FA6-EEDC-4CB1-A9E2-D3278072DBE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

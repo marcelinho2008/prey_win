@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Prey</name>
+    </assembly>
+    <members>
+        <member name="T:CaptureScreen.PlatformInvokeGDI32">
+            <summary>
+            This class shall keep the GDI32 APIs being used in our program.
+            </summary>
+        </member>
+        <member name="T:CaptureScreen.PlatformInvokeUSER32">
+            <summary>
+            This class shall keep the User32 APIs being used in 
+            our program.
+            </summary>
+        </member>
+        <member name="T:Prey.TiempoEncendidoSistema">
+            <summary>
+            Representa un intervalo de tiempo.
+            </summary>
+        </member>
+        <member name="F:Prey.TiempoEncendidoSistema.segundos">
+            <summary>
+            Contiene los segundo del intervalo.
+            </summary>
+        </member>
+        <member name="F:Prey.TiempoEncendidoSistema.minutos">
+            <summary>
+            Contiene los minutos del intervalo.
+            </summary>
+        </member>
+        <member name="F:Prey.TiempoEncendidoSistema.horas">
+            <summary>
+            Contiene las horas del intervalo.
+            </summary>
+        </member>
+        <member name="M:Prey.TiempoEncendidoSistema.#ctor">
+            <summary>
+            Crea un nuevo intervalo de tiempo.
+            </summary>
+        </member>
+        <member name="P:Prey.TiempoEncendidoSistema.Segundos">
+            <summary>
+            Obtiene los segundos del intervalo.
+            </summary>
+        </member>
+        <member name="P:Prey.TiempoEncendidoSistema.Minutos">
+            <summary>
+            Obtiene los minutos del intervalo.
+            </summary>
+        </member>
+        <member name="P:Prey.TiempoEncendidoSistema.Horas">
+            <summary>
+            Obtiene las horas del intervalo.
+            </summary>
+        </member>
+        <member name="T:Prey.TiempoEncendidoSistema.UnidadesSegundo">
+            <summary>
+            Contiene las unidades expresadas en segundos.
+            </summary>
+        </member>
+        <member name="F:Prey.TiempoEncendidoSistema.UnidadesSegundo.Segundo">
+            <summary>
+            Segundos en un segundo.
+            </summary>
+        </member>
+        <member name="F:Prey.TiempoEncendidoSistema.UnidadesSegundo.Minuto">
+            <summary>
+            Segundos en un minuto.
+            </summary>
+        </member>
+        <member name="F:Prey.TiempoEncendidoSistema.UnidadesSegundo.Hora">
+            <summary>
+            Segundos en una hora.
+            </summary>
+        </member>
+        <member name="T:CaptureScreen.CaptureScreen">
+            <summary>
+            This class shall keep all the functionality for capturing 
+            the desktop.
+            </summary>
+        </member>
+        <member name="T:Prey.Prey">
+            <summary>
+            Contiene métodos que permiten recuperar información del computador en caso de robo o pérdida.
+            </summary>
+        </member>
+        <member name="M:Prey.Prey.ObtenerInformacionRed">
+            <summary>
+            Obtiene la información de las interfaces de red en las que está conectado el computador actualmente.
+            </summary>
+            <returns>Devuelve </returns>
+        </member>
+        <member name="M:Prey.Prey.ObternetInformacionWifi">
+            <summary>
+            Recolecta toda la infromación Wifi que hay disponible.
+            </summary>
+            <returns>Devuelve la información que se ha recolectado en una manera legible.</returns>
+        </member>
+        <member name="M:Prey.Prey.ObtenerTareasActivasEquipo">
+            <summary>
+            Obtiene las tareas activas del equipo
+            </summary>
+            <returns>Devuelve un formato legible de la lista de tareas del equipo.</returns>
+        </member>
+        <member name="M:Prey.Prey.ObtenerInformacionSistema">
+            <summary>
+            Obtiene la información relacionada con el sistema y el ambiente actual de la sesión.
+            </summary>
+            <returns>Devuelve un formato legible de la información general del sistema y sus variables de entorno actuales.</returns>
+        </member>
+        <member name="M:Prey.Prey.CapturarPantalla(System.String)">
+            <summary>
+            Captura la pantalla del escritorio.
+            </summary>
+            <param name="RutaPrtScr">Ruta para guardar la captura de pantalla.</param>
+        </member>
+        <member name="T:Prey.TipoTitulo">
+            <summary>
+            Define los diferentes tipos de títulos que hay.
+            </summary>
+        </member>
+        <member name="F:Prey.TipoTitulo.Titulo">
+            <summary>
+            Título principal.
+            </summary>
+        </member>
+        <member name="F:Prey.TipoTitulo.Subtitulo">
+            <summary>
+            Título secundario.
+            </summary>
+        </member>
+        <member name="T:Prey.Log">
+            <summary>
+            Escritor de archivos de log.
+            </summary>
+        </member>
+        <member name="F:Prey.Log.entradas">
+            <summary>
+            Contiene las entradas del log.
+            </summary>
+        </member>
+        <member name="F:Prey.Log.subtitulos">
+            <summary>
+            Contiene los subtítulos del log.
+            </summary>
+        </member>
+        <member name="M:Prey.Log.#ctor">
+            <summary>
+            Crea un log.
+            </summary>
+        </member>
+        <member name="M:Prey.Log.AgregarEntrada(Prey.EntradaLog)">
+            <summary>
+            Agrega una nueva entrada al log.
+            </summary>
+            <param name="Entrada">Entrada a agregar.</param>
+            <exception cref="T:Prey.EntradaDuplicadaException">Se arroja cuando la entrada ya se encuentra dentro de log. La entrada es la misma si tiene igual sección e igual nombre de campo.</exception>
+        </member>
+        <member name="M:Prey.Log.AsociarSubtituloSeccion(Prey.SubTituloLog)">
+            <summary>
+            Asocia un subtítulo con una sección de entradas.
+            </summary>
+            <param name="Subtitulo">Subtítulo a asociar.</param>
+            <remarks>Si se va a utilizar el método ObtenerLogEnFormato() deben establecerse subtítulos, de lo contrario las secciones que no estén asociadas a un subtítulo no aparecerán.</remarks>
+            <exception cref="T:Prey.SubtituloDuplicadoException">Se arroja cuando el subtítulo ya se encuentra en la lista de subtítulos. El subtítulo es el mismo si su sección es el mismo.</exception>
+        </member>
+        <member name="M:Prey.Log.ObtenerLogEnFormato(System.String,System.Boolean)">
+            <summary>
+            Obtiene el log con un formato legible.
+            </summary>
+            <param name="Titulo">Título del log.</param>
+            <param name="ImprimirFechaActual">Determina si se coloca la fecha actual en el reporte.</param>
+            <returns>Devuelve el log con un formato legible.</returns>
+        </member>
+        <member name="M:Prey.Log.ObtenerLogEnFormato(System.String)">
+            <summary>
+            Obtiene el log con un formato legible.
+            </summary>
+            <param name="Titulo">Título del log.</param>
+            <returns>Devuelve el log con un formato legible.</returns>
+        </member>
+        <member name="M:Prey.Log.construirTitulo(System.String,Prey.TipoTitulo)">
+            <summary>
+            Construye un título para el blog.
+            </summary>
+            <param name="Titulo">Título a construir.</param>
+            <param name="Tipo">Tipo de título.</param>
+            <returns>Devuelve una cadena de caracteres con el título formateado.</returns>
+        </member>
+        <member name="M:Prey.Log.construirEntradaLegible(Prey.EntradaLog,System.UInt32)">
+            <summary>
+            Construye una entrada legible
+            </summary>
+            <param name="Entrada">Entrada del log que se va a construir.</param>
+            <param name="EspacioReservadoCampo">Número de caracteres que van después del nombre del campo antes de colocar el valor de éste.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Prey.Log.NumeroEntradasActuales">
+            <summary>
+            Obtiene el número de entradas que hay en el log.
+            </summary>
+        </member>
+        <member name="F:Prey.EntradaLog.seccion">
+            <summary>
+            Contiene la sección de la entrada.
+            </summary>
+        </member>
+        <member name="F:Prey.EntradaLog.campo">
+            <summary>
+            Contiene el campo de la entrada.
+            </summary>
+        </member>
+        <member name="F:Prey.EntradaLog.valor">
+            <summary>
+            Contiene el valor de la entrada.
+            </summary>
+        </member>
+        <member name="F:Prey.EntradaLog.informacionAdicional">
+            <summary>
+            Contiene alguna información adicional sobre la entrada.
+            </summary>
+        </member>
+        <member name="M:Prey.EntradaLog.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Crea una entrada de log.
+            </summary>
+            <param name="Seccion">Sección de la entrada.</param>
+            <param name="Campo">Nombre del campo de la entrada.</param>
+            <param name="Valor">Valor de la entrada.</param>
+            <param name="InformacionAdicional">Información adicional sobre la entrada.</param>
+        </member>
+        <member name="M:Prey.EntradaLog.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Crea una entrada de log.
+            </summary>
+            <param name="Sección">Sección de la entrada.</param>
+            <param name="Campo">Nombre del campo de la entrada.</param>
+            <param name="Valor">Valor de la entrada.</param>
+        </member>
+        <member name="P:Prey.EntradaLog.Seccion">
+            <summary>
+            Obtiene o establece la sección de la entrada.
+            </summary>
+        </member>
+        <member name="P:Prey.EntradaLog.Campo">
+            <summary>
+            Obtiene o establece el nombre del campo de la entrada.
+            </summary>
+        </member>
+        <member name="P:Prey.EntradaLog.Valor">
+            <summary>
+            Obtiene o establece el valor de la entrada
+            </summary>
+        </member>
+        <member name="P:Prey.EntradaLog.InformacionAdicional">
+            <summary>
+            Obtiene o establece información adicional sobre la entrada.
+            </summary>
+        </member>
+        <member name="F:Prey.SubTituloLog.subtitulo">
+            <summary>
+            Contiene el título de la subsección del log.
+            </summary>
+        </member>
+        <member name="F:Prey.SubTituloLog.seccion">
+            <summary>
+            Contiene la sección asociada al subtítulo.
+            </summary>
+        </member>
+        <member name="M:Prey.SubTituloLog.#ctor(System.String,System.String)">
+            <summary>
+            Crea un nuevo subtítulo.
+            </summary>
+            <param name="Subtitulo">Subtítulo de la subsección.</param>
+            <param name="Seccion">Sección asociada al subtítulo.</param>
+        </member>
+        <member name="P:Prey.SubTituloLog.Subtitulo">
+            <summary>
+            Obtiene o establece el subtítulo del log.
+            </summary>
+        </member>
+        <member name="P:Prey.SubTituloLog.Seccion">
+            <summary>
+            Obtiene o establece la sección asociada al subtítulo.
+            </summary>
+        </member>
+        <member name="T:Prey.Configuracion">
+            <summary>
+            Lee o establece la configuración que tiene la máquina para Prey. Compatible con PreyAgent.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.urlActivacion">
+            <summary>
+            Contiene la URL de activación para Prey.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.intervaloMonitoreo">
+            <summary>
+            Contiene el número de minutos que debe esperar PreyAgent para realizar un monitoreo.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.rutaPreyAgent">
+            <summary>
+            Contiene la ruta del ejecutable de PreyAgent.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.correoElectronico">
+            <summary>
+            Contiene el correo electrónico que se utilizará para enviar los mensajes generados por PreyAgent.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.servidorSMTP">
+            <summary>
+            Servidor SMTP desde el que se enviarán lo correos.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.usuarioSMTP">
+            <summary>
+            Usuario para la autenticación SMTP.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.claveSMTP">
+            <summary>
+            Clave para la autenticación SMTP.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.esSSL">
+            <summary>
+            Determina si el servidor SMTP es SSL.
+            </summary>
+        </member>
+        <member name="F:Prey.Configuracion.puertoSMTP">
+            <summary>
+            Contiene el puerto SMTP.
+            </summary>
+        </member>
+        <member name="M:Prey.Configuracion.#ctor(System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Crea un nuevo perfil de configuración para Prey y PreyAgent.
+            </summary>
+            <param name="URLActivacion">URL para la activación de Prey.</param>
+            <param name="IntervaloMonitoreo">Intervalo en minutos para el monitoreo de Prey.</param>
+            <param name="RutaPreyAgent">Ruta al ejecutable en la máquina de Prey.</param>
+            <param name="CorreoElectronico">Correo electrónico al que se enviarán losd atos de Prey.</param>
+            <param name="ServidorSMTP">Servidor SMTP desde donde se enviarán los correos.</param>
+            <param name="UsuarioSMTP">Usuario para la autenticación SMTP.</param>
+            <param name="ClaveSMTP">Contraseña para la autenticación SMTP.</param>
+            <param name="EsSSL">Determina si el servidor es SSL.</param>
+            <param name="PuertoSMTP">Determian el puerto de conexión.</param>
+        </member>
+        <member name="M:Prey.Configuracion.GuardarConfiguracion">
+            <summary>
+            Guarda la configuración de Prey en el registro de Windows.
+            </summary>
+        </member>
+        <member name="M:Prey.Configuracion.ObtenerConfiguracionActual">
+            <summary>
+            Obtiene la configuración actual de Prey. Si no hay configuración, los datos serán vacíos.
+            </summary>
+            <returns>Devuelve un objeto que contiene la configuración obtenida.</returns>
+        </member>
+        <member name="P:Prey.Configuracion.URLActivacion">
+            <summary>
+            Obtiene o establece la URL para la activación de Prey.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.IntervaloMonitoreo">
+            <summary>
+            Obtiene o establece el intervalo de monitoreo de Prey.
+            </summary>
+            <remarks>El intervalo está dado en minutos.</remarks>
+        </member>
+        <member name="P:Prey.Configuracion.RutaPreyAgent">
+            <summary>
+            Obtiene o establece la ruta hacia PreyAgent en la máquina.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.CorreoElectronico">
+            <summary>
+            Obtiene o establece el correo al cual se enviarán los reportes de Prey.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.ServidorSMTP">
+            <summary>
+            Obtiene o establece la dirección del servidor SMTP para el envío de correos.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.UsuarioSMTP">
+            <summary>
+            Obtiene o establece el usuario para la autenticación SMTP.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.ClaveSMTP">
+            <summary>
+            Establece la clave SMTP para la autenticación SMTP.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.EsSSL">
+            <summary>
+            Obtiene o establece si el servidor SMTP es SSL.
+            </summary>
+        </member>
+        <member name="P:Prey.Configuracion.PuertoSMTP">
+            <summary>
+            Obtiene o establece el puerto SMTP.
+            </summary>
+        </member>
+    </members>
+</doc>

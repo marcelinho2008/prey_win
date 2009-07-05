@@ -1,0 +1,14 @@
+D:\tomas-prey_win\tomas-prey_win\src\Prey\bin\Debug\Prey.dll
+D:\tomas-prey_win\tomas-prey_win\src\Prey\bin\Debug\Prey.pdb
+D:\tomas-prey_win\tomas-prey_win\src\Prey\bin\Debug\ManagedWifi.dll
+D:\tomas-prey_win\tomas-prey_win\src\Prey\bin\Debug\ManagedWifi.xml
+D:\tomas-prey_win\tomas-prey_win\src\Prey\obj\Debug\ResolveAssemblyReference.cache
+D:\tomas-prey_win\tomas-prey_win\src\Prey\obj\Debug\Prey.dll
+D:\tomas-prey_win\tomas-prey_win\src\Prey\obj\Debug\Prey.pdb
+D:\Proyectos\Prey0.2.0\Prey\bin\Debug\Prey.dll
+D:\Proyectos\Prey0.2.0\Prey\bin\Debug\Prey.pdb
+D:\Proyectos\Prey0.2.0\Prey\bin\Debug\ManagedWifi.dll
+D:\Proyectos\Prey0.2.0\Prey\bin\Debug\ManagedWifi.xml
+D:\Proyectos\Prey0.2.0\Prey\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyectos\Prey0.2.0\Prey\obj\Debug\Prey.dll
+D:\Proyectos\Prey0.2.0\Prey\obj\Debug\Prey.pdb

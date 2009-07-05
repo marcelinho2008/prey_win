@@ -1,0 +1,12 @@
+D:\Proyectos\Prey0.2.0\Prey0.2.0\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\Prey0.2.0.exe
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\Prey0.2.0.pdb
+D:\Proyectos\Prey0.2.0\Prey0.2.0\obj\Debug\Prey0.2.0.exe
+D:\Proyectos\Prey0.2.0\Prey0.2.0\obj\Debug\Prey0.2.0.pdb
+D:\Proyectos\Prey0.2.0\Prey0.2.0\obj\Debug\PreyPW.Installer1.resources
+D:\Proyectos\Prey0.2.0\Prey0.2.0\obj\Debug\PreyPW.csproj.GenerateResource.Cache
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\Prey.dll
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\ManagedWifi.dll
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\Prey.pdb
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\Prey.xml
+D:\Proyectos\Prey0.2.0\Prey0.2.0\bin\Debug\ManagedWifi.xml
